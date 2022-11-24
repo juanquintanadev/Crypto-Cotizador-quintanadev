@@ -55,7 +55,7 @@ function consultarAPI() {
     const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cripto}&tsyms=${moneda}`;
     // console.log(url);
 
-    // aca vamos a mostrar el spinner
+    // aca vamos a mostrar el spinner, cuando obtenemos los resultados con el fetch, nuevamente limpia el html en mostrar cotizacion y muestra todo
     mostrarSpinner();
 
     fetch(url)
